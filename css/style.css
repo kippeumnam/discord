@@ -1,3 +1,42 @@
 *{
     background-color: rgb(195, 195, 255);
 }
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 71px;
+    padding: 0 3%;
+}
+#logo img{
+width: 124px;    
+height: 24px;
+}
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    font-size: 14px;
+}
+nav ul {
+display: flex;
+padding: 0 15px;
+}
+
+nav .submenu{
+    display: none;
+}
+nav a {
+    padding: 0 15px;
+}
+
+
+
