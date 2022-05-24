@@ -1,5 +1,12 @@
-*{
-    background-color: rgb(195, 195, 255);
+:root {
+    --main-color: #5865f2;
+    --font-white: #fff;
+    --font-black: #4f545c;
+    /* 아이콘내부bar */
+    --font-bar: #ccc;
+    --font-squre: #f2f2f2;
+    --font-button: #3BA55C;
+    /* 자세히버튼 */
 }
 
 .container {
@@ -11,10 +18,12 @@
     height: 71px;
     padding: 0 3%;
 }
-#logo img{
-width: 124px;    
-height: 24px;
+
+#logo img {
+    width: 124px;
+    height: 24px;
 }
+
 .hidden {
     position: absolute;
     width: 1px;
@@ -22,21 +31,112 @@ height: 24px;
     clip: rect(1px, 1px, 1px, 1px);
     overflow: hidden;
 }
+
 nav {
     display: flex;
     font-size: 14px;
 }
+
 nav ul {
-display: flex;
-padding: 0 15px;
+    display: flex;
+    padding: 0 15px;
 }
 
-nav .submenu{
+nav .submenu {
     display: none;
 }
+
 nav a {
     padding: 0 15px;
 }
 
+nav a:visited {
+    var(--main-color)
+}
 
+nav a:hover {
+    text-decoration: underline;
+}
 
+#main-title {}
+
+.center {
+    background-image: url(../img/main.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center {
+    font-weight: 700;
+    color: var(--font-white);
+    font-size: 36px;
+}
+
+.center h1 {
+    margin: 15px;
+}
+
+.search {
+    width: 100%;
+}
+
+.search input {
+    border-radius: 30px;
+    width: 90%;
+    margin: 0 5% 0;
+    height: 40px;
+    /* 검색만 옆으로 미루는 방법  */
+}
+
+#introduce {
+    text-align: center;
+    margin-top: 104px;
+    color: var(--font-black);
+
+}
+
+.introduce-title>h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.introduce-contents {
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+.introduce-contents>a {
+    color: var(--main-color);
+    display: inline;
+}
+
+.introduce-contents>a:visited {
+    var(--main-color)
+}
+
+.introduce-contents>a:hover {
+    text-decoration: underline;
+}
+
+.contents-item {
+    border: solid red 1px;
+    width: 240px;
+    height: 260px;
+    box-sizing: border-box;
+}
+
+.contents-item {
+    width: 150px;
+    box-sizing: border-box;
+}
+/* 이미지배치.. 아 모르겠따! */
