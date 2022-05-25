@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     height: 71px;
-    padding: 0 3%;
+    padding: 0 5%;
 }
 
 
@@ -71,7 +71,6 @@ nav a:hover {
     width: 100%;
     display: flex;
     text-align: center;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -87,7 +86,11 @@ nav a:hover {
 .center h1 {
     margin: 15px;
 }
-
+.search-icon{
+    border: solid 1px red;
+    position: absolute;
+    bottom: 2px;
+}
 .search {
     width: 100%;
     box-sizing: border-box;
@@ -99,7 +102,18 @@ nav a:hover {
     margin: 0 5% 0 5%;
     height: 40px;
     max-width: 600px;
+    background: #fff;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-size: 17px;
+    padding-left: 38px;
+    box-sizing: border-box;
+    border: solid var(--main-color) 1px;
     /* 검색만 옆으로 미루는 방법  */
+}
+.search input:focus {
+    outline: none;
 }
 
 #introduce {
@@ -133,11 +147,25 @@ nav a:hover {
 .introduce-contents>a:hover {
     text-decoration: underline;
 }
-
-.info {
+.contents-item {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contents-item li {
     width: 240px;
     height: 260px;
-    box-sizing: border-box;
+    border: red 1px solid;
+    background-color: #3BA55C;
+    display: flex;
 }
+.contents-item li a figure{
+    width: 100px;
+}
+
+/* 오브젝트 */
 
 
