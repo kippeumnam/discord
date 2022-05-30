@@ -7,6 +7,8 @@
     --font-squre: #f2f2f2;
     --font-button: #3BA55C;
     /* 자세히버튼 */
+    --font-footer: #23272a;
+
 }
 
 .container {
@@ -40,25 +42,31 @@ nav {
 
 nav ul {
     display: flex;
-    padding: 0 15px;
 }
 
 nav .submenu {
     display: none;
-    
+
 }
 
 nav a {
     padding: 0 15px;
-    color : var(--main-color);
+    color: var(--main-color);
 }
 
 nav a:visited {
-    color : var(--main-color)
+    color: var(--main-color)
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+nav button {
+    display: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 #main-title {}
@@ -84,20 +92,22 @@ nav a:hover {
 .center h1 {
     margin: 15px;
 }
-.search-icon{
+
+.search-icon {
     border: solid 1px red;
     position: absolute;
     bottom: 2px;
 }
+
 .search {
     width: 100%;
     box-sizing: border-box;
+    padding-top: 10px;
 }
 
 .search input {
-    border-radius: 30px;    
+    border-radius: 30px;
     width: 90%;
-    margin: 0 5% 0 5%;
     height: 40px;
     max-width: 600px;
     background: #fff;
@@ -108,8 +118,10 @@ nav a:hover {
     padding-left: 38px;
     box-sizing: border-box;
     border: solid var(--main-color) 1px;
+    margin: 0 auto;
     /* 검색만 옆으로 미루는 방법  */
 }
+
 .search input:focus {
     outline: none;
 }
@@ -138,19 +150,25 @@ nav a:hover {
 }
 
 .introduce-contents>a:visited {
-    color : var(--main-color)
+    color: var(--main-color)
 }
 
 .introduce-contents>a:hover {
     text-decoration: underline;
 }
+
 .contents-item {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     max-width: 100%;
     align-items: center;
     justify-content: center;
 }
+
+.contents-item li:hover {
+    transform: translateY(-5px);
+}
+
 .contents-item li {
     width: 240px;
     height: 260px;
@@ -162,28 +180,34 @@ nav a:hover {
     box-sizing: border-box;
     line-height: 20px;
 }
-.contents-item li a figure{
+
+.contents-item li a figure {
     width: 100px;
     display: flex;
     margin: 0 auto;
 }
+
 .contents-item li a h2 {
     font-size: 22px;
     color: var(--main-color);
 }
+
 .contents-item li a p {
     font-size: 14px;
     color: var(--font-black);
     padding: 12px 0 0 0;
 }
+
 .other {
     margin: 50px 0 3px;
 }
+
 .other-title {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 .other-item li {
     background-color: var(--font-squre);
 }
@@ -196,12 +220,75 @@ nav a:hover {
     width: 50px;
     border-bottom: solid 1px var(--font-bar);
     padding: 20px 0 0 0;
-    /* padding: 30px 0 20px; <- 여기에서 20px이 p 앞의 여백이 아닌 h2 밑여백이 되는지..*/
-} 
+}
 
 
-/* 가상요소 선택이 안되는데 여쭤보기 */
-/* 겹겹이 세밀하게 마진 패딩 넣고싶은데 마음대로 잘 안되는 것. 여백 넣는 기준 여쭤보기 ㅜㅜ  */
-/* 오브젝트 */
+.footer-container {
+    display: flex;    
+    background-color: var(--font-footer);
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 50px;
+
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 42px;
+    font-size: 16px;
+    background-color:var(--font-button);
+    border-radius: 30px;
+    /* box-sizing: border-box;
+    overflow: hidden; */
+    color: var(--font-white);
+    margin: 0 auto; 
+    border: none;
+    /* 클릭되는 버튼이 되게 하는법 */
+}
+
+.footer-icons {
+    display: flex;
+    margin-top: 100px;
+    flex-flow: column;
+}
+.apps img {
+    display: flex;
+    height: 50px;
+    opacity: 0.7;
+
+}
+#footer-logo img {
+    height: 36px;
+    display: none;
+}
+.support {
+    display: none;
+}
+.partner {
+    display: none;
+}
+.office {
+    display: none;
+}
 
 
+
+
+
+
+@media screen and (max-width:550px) {
+    header .container ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
+        color: #5865f2;
+    }
+
+    nav a {
+        margin-top: 5px;
+    }
