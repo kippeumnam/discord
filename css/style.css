@@ -248,6 +248,7 @@ nav button {
 .download-center-container {
     padding-top: 70px;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     border-bottom: 1px rgb(235, 235, 235) solid;
@@ -312,6 +313,28 @@ nav button {
     opacity: 0.5;
 
 }
+=======
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.apps img {
+    height: 50px;
+    opacity: 0.7;
+}
+#footer-logo img {
+    height: 36px;
+    /* display: none; */
+}
+/* .support {
+    display: none;
+}
+.partner {
+    display: none;
+}
+.office {
+    display: none;
+} */
+>>>>>>> 63cc83fee6f3005e5bf40ef9df170bfbdbb87b06
 
 footer nav{
     padding: 160px 0 0 160px;
