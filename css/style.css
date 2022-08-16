@@ -222,16 +222,13 @@ nav button {
     padding: 20px 0 0 0;
 }
 
-
 .footer-container {
-    display: flex;    
     background-color: var(--font-footer);
     max-width: 100%;
     margin-top: 60px;
     padding: 50px;
-
+    overflow: hidden;
 }
-
 .footer-button {
     display: flex;
     align-items: center;
@@ -248,33 +245,77 @@ nav button {
     border: none;
     /* 클릭되는 버튼이 되게 하는법 */
 }
-
-.footer-icons {
+.download-center-container {
+    padding-top: 70px;
     display: flex;
-    margin-top: 100px;
-    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px rgb(235, 235, 235) solid;
 }
-.apps img {
+.download-background {    
+    background: url(../img/device.png) no-repeat;
+    box-sizing: border-box;
+    background-size: 100% ;
+    background-position: center top;
+    width: 814px;
+    height: 145px;
     display: flex;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.broswer-icon {
+    background: url(../img/icon-broswer.svg) no-repeat;
+    width: 174px;
     height: 50px;
-    opacity: 0.7;
+    position: absolute;
+    top: 65px;
+    left: 90px;
+    opacity: 0.5;
+}
+.android-icon {
+    background: url(../img/icon-android.svg) no-repeat;
+    width: 41px;
+    height: 50px;
+    position: absolute;
+    top: 65px;
+    left: 380px;
+    opacity: 0.5;
 
 }
-#footer-logo img {
-    height: 36px;
-    display: none;
+.apple-icon {
+    background: url(../img/apple.svg) no-repeat;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 65px;
+    left: 473px;
+    opacity: 0.5;
+
 }
-.support {
-    display: none;
+.windows-icon{
+    background: url(../img/windows.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65px;
+    left: 620px;
+    opacity: 0.5;
 }
-.partner {
-    display: none;
-}
-.office {
-    display: none;
+.osx-icon{
+    background: url(../img/x.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65px;
+    left: 690px;
+    opacity: 0.5;
+
 }
 
-
+footer nav{
+    padding: 160px 0 0 160px;
+}
 
 
 
